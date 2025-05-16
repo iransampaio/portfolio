@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Equipamentos de Luta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Equipamentos de Luta</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Carrinho</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="produtos">
+            <!-- Produto 1: Luvas de Boxe -->
+            <div class="produto" data-preco="299.90">
+                <img src="imagens/luvas-boxe.jpg" alt="Luvas de Boxe">
+                <h2>Luvas de Boxe</h2>
+                <p>R$ 299,90</p>
+                <button onclick="adicionarAoCarrinho('Luvas de Boxe', 299.90, 'imagens/luvas-boxe.jpg')">Adicionar ao Carrinho</button>
+            </div>
+
+            <!-- Produto 2: Kimono de Jiu-Jitsu -->
+            <div class="produto" data-preco="459.90">
+                <img src="imagens/kimono-jiu-jitsu.jpg" alt="Kimono de Jiu-Jitsu">
+                <h2>Kimono de Jiu-Jitsu</h2>
+                <p>R$ 459,90</p>
+                <button onclick="adicionarAoCarrinho('Kimono de Jiu-Jitsu', 459.90, 'imagens/kimono-jiu-jitsu.jpg')">Adicionar ao Carrinho</button>
+            </div>
+
+            <!-- Produto 3: Protetor Bucal -->
+            <div class="produto" data-preco="49.90">
+                <img src="imagens/protetor-bucal.jpg" alt="Protetor Bucal">
+                <h2>Protetor Bucal</h2>
+                <p>R$ 49,90</p>
+                <button onclick="adicionarAoCarrinho('Protetor Bucal', 49.90, 'imagens/protetor-bucal.jpg')">Adicionar ao Carrinho</button>
+            </div>
+        </section>
+
+        <section class="carrinho">
+            <h2>Carrinho de Compras</h2>
+            <ul id="lista-carrinho"></ul>
+            <p><strong>Total:</strong> R$ <span id="total-carrinho">0,00</span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Loja de Equipamentos de Luta</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
